@@ -99,7 +99,7 @@ class Rock_paper_scissors:
 rps_obj = Rock_paper_scissors()
 computer_choice = rps_obj.get_computer_choice()
 user_choice = rps_obj.play_game()
-
+rps_obj.get_winner(computer_choice, user_choice)
 #rps_obj.get_winner()
 
 #retrived = [rps_obj.get_prediction()]

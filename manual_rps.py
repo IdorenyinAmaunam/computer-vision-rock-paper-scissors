@@ -35,9 +35,16 @@ class Rock_paper_scissors:
                    
 
 rps_obj = Rock_paper_scissors()
-computer_choice = rps_obj.get_computer_choice()
-user_choice = rps_obj.get_user_choice()
-rps_obj.get_winner(computer_choice, user_choice)
+confirmation = "Y"
+while (confirmation == 'Y'):
+    computer_choice = rps_obj.get_computer_choice()
+    user_choice = rps_obj.get_user_choice()
+    rps_obj.get_winner(computer_choice, user_choice)
+
+    confirmation = (input ("Do you want to play again? Y/N: ")).upper()
+
+print("Thank you for playing our game ")
+print("Bye")
 
 #user_choice = play.get_user_choice()computer_choice
 #play.get_winner(computer_choice, user_choice)
